@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.send('Hello, Express!');
 });
 
-
+// getdata api
 app.get('/api/getData', (req, res) => {
   const query = 'SELECT * FROM task_details';
   connection.query(query, (error, results) => {
